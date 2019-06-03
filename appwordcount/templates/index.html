@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="hye_center" style="margin-top: 100px;">Let's Count Words</h1>
+    <form method="GET" action="{%url 'result'%}">
+        <input type="submit" style="margin-top: 20px; margin-bottom: 10px;"></input>
+        <textarea name="mytext" cols="40" rows="20"
+        style="box-shadow: 10px 10px gold;
+                border-radius:10px;">
+                </textarea>
+    </form>
+</body>
+</html>
